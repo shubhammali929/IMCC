@@ -1,9 +1,13 @@
-![img](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZamb4ehS8kkJ9OWbSMFy0Vo7_HbNcy7p6jA&usqp=CAU)
+Step 1: Total_water = 0
 
-<!-- <marquee><h1>स्वागत स्वागत स्वागत</h1></marquee> -->
+Step 2: Traverse the array from start to end.
 
-### Please contribute to this repository <br/>-Yours Omkar Lohar 💖
+    (a) For every element, traverse the array from start to that index and find the maximum on its left. Let this be max_left.
 
-### कृपया या रेपॉझीटोरीला योगदान द्या <br/>-तुमचाच ओंकार लोहार 💖
+    (b) Traverse the array from the current index to end and find the maximum on its right. Let this be max_right.
 
-### कृपया इस रेपोझीटोरीमें योगदान दें <br/>-आपका ओंकार लोहार 💖
+    (c) Trapped water in this, column=min((max_left, max_right)- array[i]).
+
+    (d) Total_water = Total_water + Trapped_water.
+
+Step 3: Print the Total_water.
